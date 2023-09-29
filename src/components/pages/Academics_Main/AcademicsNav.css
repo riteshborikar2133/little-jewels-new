@@ -1,0 +1,264 @@
+
+
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+}
+
+body {
+    background: linear-gradient(#ffe9ac 1%, #f3e3b9 2%, #ffffff 60%);
+    background-repeat: no-repeat;
+
+}
+
+.head {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    background: url(./images/shine-flying-confetti.png);
+    background-size: 20%;
+    margin: 2rem;
+}
+
+.head h1 {
+    text-align: center;
+    font-family: 'Dosis';
+    font-size: 3rem;
+    color: #293162;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.head .shadow {
+    font-family: 'Dosis';
+    color: #293162;
+    /* font-family:var(--Coiny-Regular) ; */
+    text-transform: uppercase;
+    text-align: center;
+    position: absolute;
+    font-size: 4rem;
+    color: rgba(0, 0, 0, 0.09);
+    transform: scale(1.2, 1);
+}
+
+.sec1 {
+    text-align: center;
+    background: url("./images/shine-christmas-balls.png");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* border: 1px solid red; */
+    margin: 0 10rem;
+}
+
+.sec1 img {
+    width: 40rem;
+    /* border: 1px solid black; */
+    border-radius: 2rem;
+    box-shadow: 2px 3px 20px black;
+    margin: 1rem;
+}
+
+.sec1 h2 {
+    font-size: 2rem;
+    margin: 1rem 1rem;
+    font-family: "Exo+2";
+}
+
+.sec1 hr {
+    background: black;
+    border: none;
+    color: black;
+    height: 1px;
+}
+
+.sec1 p {
+    font-size: 1.4rem;
+    font-family: "Happy Monkey";
+    font-weight: bold;
+    text-align: center;
+    margin: 1rem 1rem;
+}
+
+.wrapper {
+    display: flex;
+    /* border: 1px solid red; */
+    margin: 2rem 3rem;
+    padding: 2rem 0;
+    justify-content: center;
+    background: url(./images/sammy-line-swirls-for-background.png);
+    background-size: 50%;
+    flex-wrap: wrap;
+}
+
+.acadcard {
+    height: 20rem;
+    width: 30rem;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: end;
+    /* border: 1px solid red; */
+    position: relative;
+    margin: 2rem;
+    border-radius: 0.625rem;
+    box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.25);
+}
+.acadcard .backimg img{
+    position: absolute;
+    top: 0;
+    width: 30rem;
+    height: 20rem;
+}
+.acadcard .acadcont{
+    width: 30rem;
+    z-index: 1;
+    color: #202214;
+    height: 20rem;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content:end;
+    align-items:center;
+    flex-direction: column;
+    position: relative;
+    top: 10rem;
+    transition: 0.22s linear;
+}
+.acadcard .acadcont .acadtitle h2{
+    font-size: 1.5rem;
+    text-shadow: -1px 1px 0 #000,
+        1px 1px 0 #000,
+        1px -1px 0 #000,
+        -1px -1px 0 #000;
+    color: rgb(236, 211, 22);
+    margin: 1rem 0;
+    font-family: "Coiny";
+    height: 2rem;
+    /* border: 1px solid red; */
+}
+.acadcard .acadcont .acaddis p{
+    /* display: none; */
+    /* border: 1px solid red; */
+    height: 10rem;
+    padding: 0.5rem 1rem;
+    font-family: "Exo+2";
+}
+
+.acadcard .acadcont:hover{
+    top: 0;
+    background: linear-gradient(180deg,
+            hsla(0, 0%, 0%, 0) 0%,
+            hsla(0, 0%, 0%, 0.3) 10%,
+            hsl(0, 0%, 0%) 100%);
+    color: white;
+}
+
+@media screen and (max-width:850px) {
+    * {
+        font-size: 14px;
+    }
+
+    .head {
+        margin: 1rem 0rem;
+    }
+
+    .head h1 {
+        text-align: center;
+        font-size: 2rem;
+        text-transform: uppercase;
+        position: relative;
+    }
+
+    .head .shadow {
+        font-size: 3rem;
+        color: rgba(0, 0, 0, 0.09);
+        transform: scale(1, 1);
+    }
+
+    .sec1 {
+        margin: 1rem;
+    }
+
+    .sec1 img {
+        margin: 1rem;
+        width: 30rem;
+    }
+
+    .wrapper {
+        margin: 0;
+        padding: 0;
+    }
+}
+@media screen and (max-width:600px) {
+    * {
+        font-size: 12px;
+    }
+
+    .head {
+        margin: 1rem 0rem;
+    }
+
+    .head h1 {
+        text-align: center;
+        font-size: 2rem;
+        text-transform: uppercase;
+        position: relative;
+    }
+
+    .head .shadow {
+        font-size: 3rem;
+        color: rgba(0, 0, 0, 0.09);
+        transform: scale(1, 1);
+    }
+
+    .sec1 {
+        margin: 1rem;
+    }
+
+    .sec1 img {
+        margin: 1rem;
+        width: 30rem;
+    }
+
+    .wrapper {
+        margin: 0;
+        padding: 0;
+    }
+}
+@media screen and (max-width:400px) {
+    * {
+        font-size: 10px;
+    }
+
+    .head {
+        margin: 1rem 0rem;
+    }
+
+    .head h1 {
+        text-align: center;
+        font-size: 2rem;
+        text-transform: uppercase;
+        position: relative;
+    }
+
+    .head .shadow {
+        font-size: 3rem;
+        color: rgba(0, 0, 0, 0.09);
+        transform: scale(1, 1);
+    }
+
+    .sec1 {
+        margin: 1rem;
+    }
+
+    .sec1 img {
+        margin: 1rem;
+        width: 30rem;
+    }
+
+    .wrapper {
+        margin: 0;
+        padding: 0;
+    }
+}
